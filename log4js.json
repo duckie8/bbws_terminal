@@ -1,0 +1,38 @@
+{
+    "appenders": [{
+            "type": "console"
+        },
+        {
+            "category": "log_debug",
+            "type": "dateFile",
+            "filename": "./logs/debug",
+            "alwaysIncludePattern": true,
+            "pattern": "-yyyy-MM-dd.log"
+        }, {
+            "category": "log_info",
+            "type": "dateFile",
+            "filename": "./logs/info",
+            "alwaysIncludePattern": true,
+            "pattern": "-yyyy-MM-dd.log"
+        }, {
+            "category": "log_warn",
+            "type": "dateFile",
+            "filename": "./logs/warn",
+            "alwaysIncludePattern": true,
+            "pattern": "-yyyy-MM-dd.log"
+        }, {
+            "category": "log_error",
+            "type": "dateFile",
+            "filename": "./logs/error",
+            "alwaysIncludePattern": true,
+            "pattern": "-yyyy-MM-dd.log"
+        }
+    ],
+    "replaceConsole": true,
+    "levels": {
+        "log_debug": "DEBUG",
+        "log_info": "INFO",
+        "log_warn": "WARN",
+        "log_error": "ERROR"
+    }
+}

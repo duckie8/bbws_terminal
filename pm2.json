@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "xinnuo_terminal",
+            "script"      : "./bin/www",
+            "args"        : [],
+            "watch"       : false,
+            "merge_logs"  : true,
+            "max_memory_restart": "100M",
+            "env": {
+                "NODE_ENV": "production"
+            },
+            "env_dev" : {
+                "NODE_ENV": "development"
+            }
+        }
+    ]
+}
